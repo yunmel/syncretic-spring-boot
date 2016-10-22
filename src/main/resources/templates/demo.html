@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<body>
+	<span>Time:</span>
+	<ul>
+		<li>From controller: ${time}</li>
+		<li>From Beetl</li>
+	</ul>
+	<span>Message: ${message}</span>
+	<span>sessions: ${sessions}</span><br/>
+	<span>pazo: ${pazo}</span>
+	<hr>
+	
+	@for (c in cities){
+		<p>${c.name}_${c.state}_${c.delFlag}_${c.cityPart!}</p>
+	@}
+</body>
+
+</html>
